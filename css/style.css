@@ -29,15 +29,27 @@ footer {
 
 header {
   border-bottom: 3px double black;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-header h1 {
-  padding: 30px;
+header img {
+  height: 50px;
 }
 
 nav {
   width: 1000px;
   border-bottom: 3px double black;
+  padding: 10px 0;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 main {
@@ -80,7 +92,30 @@ section {
   width: 333px;
 }
 
-#row-4 footer {
+#jukebox {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bliss {
+  height: 150px;
+  background-image: url("../src/img/bliss.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 333px 150px;
+}
+
+#footer {
   border-top: 3px double black;
   width: 1000px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }

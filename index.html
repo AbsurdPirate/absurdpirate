@@ -10,8 +10,8 @@
   </head>
   <body>
     <!--HEADER SECTION-->
-    <header class="bumpered">
-      <h1>Absurd Pirate's Internet Lounge</h1>
+    <header class="bumpered" style="text-align: center;">
+      <img src="src/img/Logo.png" alt="logo">
       <p id="message"></p>
     </header>
     <nav
@@ -23,25 +23,28 @@
         height: 50px;
       "
     >
-      <a href="#">About</a>
-      <a href="#">Blog</a>
-      <a href="#">Guestbook</a>
-      <a href="#">Crafts</a>
+      <a href="#"><img src="src/links/about.png" alt="" srcset=""> About</a>
+      <a href="#"><img src="src/links/blog.png" alt="">Blog</a>
+      <a href="#"><img src="src/links/guestbook.png" alt="" srcset="">Guestbook</a>
+      <a href="#"><img src="src/links/writing.png" alt="" srcset="">Crafts</a>
     </nav>
 
     <!--PANELS-->
     <img
-      src="src/img/ipod.png"
+      src="src/img/Halo 3.jpg"
       alt=""
       srcset=""
-      style="position: absolute; width: 300px; top: 100px; left: 1400px"
+      style="position: absolute; width: 225px; top: 100px; left: 1425px; border: 3px solid black;"
     />
     <a
       href="src/docs/yourewelcomecomrad.pdf"
       download
       style="position: absolute; width: 250px; top: 500px; left: 70px"
     >
-      <img src="src/gifs/marx-ad.gif" alt="" srcset="" />
+      <picture>
+        <source srcset="src/img/marxad-still.jpg" media="(prefers-reduced-motion: reduce)"></source> 
+        <img src="src/gifs/marx-ad.gif" alt="marx-ad">
+      </picture>
     </a>
     <!--END PANELS-->
 
@@ -91,8 +94,11 @@
             theme: "Windows XP",
           });
         </script>
-        <div id="piratetv" class="left" style="width: 600px">
-          VIDEO SECTION!
+        <div id="jukebox" class="left" style="width: 750px">
+          <div>
+            <h3>Jukebox</h3>
+          </div>
+          <img src="src/img/ipod.png" alt="" srcset="">
         </div>
       </section>
       <!--ROW 4-->
@@ -114,7 +120,7 @@
           >
             Sign my Guestbook... Or else
           </div>
-          <div>something here</div>
+          <div id="bliss"></div>
         </div>
       </section>
     </main>

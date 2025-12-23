@@ -18,8 +18,6 @@ function generateMessage() {
     messages[Math.floor(Math.random() * messages.length)];
 }
 
-document.addEventListener("DOMContentLoaded", generateMessage, false);
-
 // TITLETRON
 const titletron = async () => {
   let text = "Welcome to Absurd Pirate's Internet Lounge! ";
@@ -51,4 +49,9 @@ const titletron = async () => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", titletron, false);
+function loadSite() {
+  titletron();
+  generateMessage();
+}
+
+document.addEventListener("DOMContentLoaded", loadSite, false);
