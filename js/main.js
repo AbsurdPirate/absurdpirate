@@ -9,6 +9,15 @@ const messages = [
   "Please don't sue me",
 ];
 
+// Song List
+const song_list = document.getElementById("selection");
+const songs = [
+  ["LOOK YOUR BACK!", "Himiko Kikuchi", "Flying Beagle"],
+  ["Scattered", "Green Day", "nimrod."],
+  ["Same Man I Was Before", "Oingo Boingo", "Dead Man's Party"],
+  ["Scattered", "Green Day", "nimrod."],
+];
+
 //Titletron vars
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
@@ -48,6 +57,10 @@ const titletron = async () => {
     index++;
   }
 };
+
+songs.forEach((song) => {
+  selection.innerHTML += `<div class="song-item">${song[0]}<br>${song[1]} - ${song[2]}</div>`;
+});
 
 function loadSite() {
   titletron();

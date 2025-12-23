@@ -9,11 +9,12 @@
     <script src="https://iframe.chat/scripts/main.min.js"></script>
   </head>
   <body>
-    <!--HEADER SECTION-->
-    <header class="bumpered" style="text-align: center;">
-      <img src="src/img/Logo.png" alt="logo">
+    <!-- HEADER SECTION -->
+    <header class="bumpered" style="text-align: center">
+      <img src="src/img/Logo.png" alt="logo" />
       <p id="message"></p>
     </header>
+    <!-- NAVIGATION -->
     <nav
       class="bumpered"
       style="
@@ -23,18 +24,28 @@
         height: 50px;
       "
     >
-      <a href="#"><img src="src/links/about.png" alt="" srcset=""> About</a>
-      <a href="#"><img src="src/links/blog.png" alt="">Blog</a>
-      <a href="#"><img src="src/links/guestbook.png" alt="" srcset="">Guestbook</a>
-      <a href="#"><img src="src/links/writing.png" alt="" srcset="">Crafts</a>
+      <a href="#"><img src="src/links/about.png" alt="" srcset="" /> About</a>
+      <a href="https://blog.absurdpirate.com"
+        ><img src="src/links/blog.png" alt="blog-icon" />Blog</a
+      >
+      <a href="#"
+        ><img src="src/links/guestbook.png" alt="" srcset="" />Guestbook</a
+      >
+      <a href="#"><img src="src/links/crafts.png" alt="" srcset="" />Crafts</a>
     </nav>
-
-    <!--PANELS-->
+    <!-- END NAVIGATION -->
+    <!-- PANELS -->
     <img
       src="src/img/Halo 3.jpg"
       alt=""
       srcset=""
-      style="position: absolute; width: 225px; top: 100px; left: 1425px; border: 3px solid black;"
+      style="
+        position: absolute;
+        width: 225px;
+        top: 100px;
+        left: 1425px;
+        border: 3px solid black;
+      "
     />
     <a
       href="src/docs/yourewelcomecomrad.pdf"
@@ -42,13 +53,15 @@
       style="position: absolute; width: 250px; top: 500px; left: 70px"
     >
       <picture>
-        <source srcset="src/img/marxad-still.jpg" media="(prefers-reduced-motion: reduce)"></source> 
-        <img src="src/gifs/marx-ad.gif" alt="marx-ad">
+        <source
+          srcset="src/img/marxad-still.jpg"
+          media="(prefers-reduced-motion: reduce)"
+        />
+        <img src="src/gifs/marx-ad.gif" alt="marx-ad" />
       </picture>
     </a>
-    <!--END PANELS-->
-
-    <!--MAIN SECTION-->
+    <!-- END PANELS -->
+    <!-- MAIN SECTION -->
     <main class="bumpered">
       <!--ROW 1-->
       <section id="row-1">
@@ -64,10 +77,26 @@
             defer
           ></script>
         </div>
-        <div id="greeting" class="left" style="width: 750px; height: 250px">
-          <h1>Ahoy!</h1>
+        <div
+          id="greeting"
+          class="left"
+          style="width: 750px; height: 250px; display: flex"
+        >
+          <div>
+            <h1>Ahoy!</h1>
+            <p>
+              My name is Absurd Pirate, or just Pirate if you'd like. Welcome to
+              my corner of the indie-web. This site is functionally and
+              extension of myself as well as a lounge area for anyone who finds
+              themselves stopping by. <br /><br />
+              Enjoy your stay, click around! This site is probably always going
+              to be under development, so keep an eye out for new updates!
+            </p>
+          </div>
+          <img src="src/gifs/greeting.gif" alt="" srcset="" />
         </div>
       </section>
+      <!-- END ROW 1 -->
       <!--ROW 2-->
       <section id="row-2" style="height: 50px">
         <img src="src/stamps/stamp_gameboy.gif" alt="" srcset="" />
@@ -82,6 +111,7 @@
         <img src="src/stamps/stamp_windows.gif" alt="" srcset="" />
         <img src="src/stamps/stamp_xbox.png" alt="" srcset="" />
       </section>
+      <!-- END ROW 2 -->
       <!--ROW 3-->
       <section id="row-3" style="height: 250px">
         <iframe
@@ -95,12 +125,19 @@
           });
         </script>
         <div id="jukebox" class="left" style="width: 750px">
-          <div>
+          <div id="control-center">
             <h3>Jukebox</h3>
+            <audio controls>
+              <source src="horse.ogg" type="audio/ogg" />
+              <source src="horse.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <div id="selection"></div>
           </div>
-          <img src="src/img/ipod.png" alt="" srcset="">
+          <img src="src/img/ipod.png" alt="" srcset="" />
         </div>
       </section>
+      <!-- END ROW 3 -->
       <!--ROW 4-->
       <section id="row-4">
         <div>
@@ -123,8 +160,13 @@
           <div id="bliss"></div>
         </div>
       </section>
+      <!-- END ROW 4 -->
     </main>
+    <!--END MAIN SECTION-->
     <!--FOOTER SECTION-->
-    <footer class="bumpered">&copy; Absurd Pirate 2025</footer>
+    <footer class="bumpered">
+      <img src="src/img/crafted-by-human.png" alt="" srcset="" /><br />&copy;
+      Absurd Pirate now and forever
+    </footer>
   </body>
 </html>
