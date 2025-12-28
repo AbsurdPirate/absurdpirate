@@ -38,6 +38,14 @@
         color: white;
       }
 
+      a:hover {
+        text-decoration: underline;
+      }
+
+      nav a:hover {
+        color: var(--dark-blue);
+      }
+
       td {
         font-size: 8pt;
       }
@@ -61,11 +69,14 @@
         padding: 10px;
       "
     >
-      <p>AbsurdPirate.com | Home</p>
+      <p><a href="index.html">AbsurdPirate.com | Home</a></p>
       <p>powered by Neocities</p>
     </header>
     <nav style="background-color: var(--light-blue); padding: 5px 10px">
-      <p><a href="">Home</a> | <a href="">Blog</a></p>
+      <p>
+        <a href="index.html">Home</a> |
+        <a href="https://blog.absurdpirate.com">Blog</a>
+      </p>
     </nav>
     <main style="background-color: white; min-height: 100vh; display: flex">
       <section style="margin: 0 20px; width: 300px">
@@ -114,7 +125,7 @@
               font-weight: 600;
             "
             href=""
-            >Whatever</a
+            >Creations</a
           >
         </p>
 
@@ -150,6 +161,21 @@
                     <tr></tr>
                     <tr>
                       <td width="120">Send Email</td>
+                      <td width="15"></td>
+                      <td>Message on Discord</td>
+                    </tr>
+                    <tr>
+                      <td width="120">Contact the Gazette</td>
+                      <td width="15"></td>
+                      <td>Melonland Forum</td>
+                    </tr>
+                    <tr>
+                      <td width="120">Comment on Page</td>
+                      <td width="15"></td>
+                      <td>Add on Discord</td>
+                    </tr>
+                    <tr>
+                      <td width="120">Sign Guestbook</td>
                       <td width="15"></td>
                       <td>Do Nothing</td>
                     </tr>
@@ -196,7 +222,7 @@
                   id="what"
                 >
                   <tbody>
-                    <tr id="GeneralRow">
+                    <tr>
                       <td
                         valign="top"
                         align="left"
@@ -204,17 +230,17 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span class="lightbluetext8">General</span>
+                        <span>General</span>
                       </td>
                       <td
-                        id="ProfileGeneral"
                         width="175"
                         bgcolor="#d5e8fb"
                         style="word-wrap: break-word"
                       >
                         Indieweb, Video Games, Socialism, Music, Finding New
                         Food, Piracy, iPods, Retro Tech, Retro Gaming, Vinyl,
-                        Playing/Writing Music, Building Alternate Communities
+                        Corgis, Cats, Playing/Writing Music, Building Alternate
+                        Communities
                         <br /><br />
                       </td>
                     </tr>
@@ -226,10 +252,9 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span class="lightbluetext8">Video Games</span>
+                        <span>Video Games</span>
                       </td>
                       <td
-                        id="ProfileGeneral"
                         width="175"
                         bgcolor="#d5e8fb"
                         style="word-wrap: break-word"
@@ -243,7 +268,7 @@
                         Halo 3: ODST <br /><br />
                       </td>
                     </tr>
-                    <tr id="MusicRow">
+                    <tr>
                       <td
                         valign="top"
                         align="left"
@@ -251,10 +276,9 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span class="lightbluetext8">Music</span>
+                        <span>Music</span>
                       </td>
                       <td
-                        id="ProfileMusic"
                         width="175"
                         bgcolor="#d5e8fb"
                         style="word-wrap: break-word"
@@ -284,7 +308,7 @@
                         <p><b>Instruments</b>: Guitar, Bass, Piano, Drums</p>
                       </td>
                     </tr>
-                    <tr id="MoviesRow">
+                    <tr>
                       <td
                         valign="top"
                         align="left"
@@ -292,10 +316,9 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span class="lightbluetext8">Movies</span>
+                        <span>Movies</span>
                       </td>
                       <td
-                        id="ProfileMovies"
                         width="175"
                         bgcolor="#d5e8fb"
                         style="word-wrap: break-word"
@@ -306,7 +329,7 @@
                         <b>Directors</b>: Kubrick, Spielberg, Tarantino
                       </td>
                     </tr>
-                    <tr id="TelevisionRow">
+                    <tr>
                       <td
                         valign="top"
                         align="left"
@@ -314,10 +337,9 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span class="lightbluetext8">Shows</span>
+                        <span>Shows</span>
                       </td>
                       <td
-                        id="ProfileTelevision"
                         width="175"
                         bgcolor="#d5e8fb"
                         style="word-wrap: break-word"
@@ -326,10 +348,7 @@
                         Circus, Cyberpunk: Edgerunners
                       </td>
                     </tr>
-                    <script language="JavaScript">
-                      highlightInterests("ProfileTelevision");
-                    </script>
-                    <tr id="BooksRow">
+                    <tr>
                       <td
                         valign="top"
                         align="left"
@@ -337,10 +356,9 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span class="lightbluetext8">Literature</span>
+                        <span>Literature</span>
                       </td>
                       <td
-                        id="ProfileBooks"
                         width="175"
                         bgcolor="#d5e8fb"
                         style="word-wrap: break-word"
@@ -351,7 +369,7 @@
                         McCarthy, Eric Nylund
                       </td>
                     </tr>
-                    <tr id="HeroesRow">
+                    <tr>
                       <td
                         valign="top"
                         align="left"
@@ -359,20 +377,206 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span class="lightbluetext8">Heroes</span>
+                        <span>Heroes</span>
                       </td>
                       <td
-                        id="ProfileHeroes"
                         width="175"
                         bgcolor="#d5e8fb"
                         style="word-wrap: break-word"
                       >
-                        Che Guevara, Dad, Billie Joe Armstrong, Linus Torvalds
+                        Che Guevara, Dad, Billie Joe Armstrong, Linus Torvalds,
+                        Albert Camus
                       </td>
                     </tr>
-                    <script language="JavaScript">
-                      highlightInterests("ProfileHeroes");
-                    </script>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <table
+          class="userProfileDetail"
+          bordercolor="#6699cc"
+          cellspacing="0"
+          cellpadding="0"
+          width="300"
+          bgcolor="#ffffff"
+          border="1"
+        >
+          <tbody>
+            <tr>
+              <td
+                class="text tdborder"
+                valign="center"
+                align="left"
+                width="300"
+                bgcolor="#6699cc"
+                wrap=""
+                style="word-wrap: break-word"
+              >
+                &nbsp;&nbsp;&nbsp;
+                <span style="font-size: 9pt; font-weight: bold; color: white"
+                  >&nbsp;Pirate's Details</span
+                >
+              </td>
+            </tr>
+            <tr valign="top">
+              <td class="tdborder">
+                <table
+                  bordercolor="000000"
+                  cellspacing="3"
+                  cellpadding="3"
+                  width="300"
+                  align="center"
+                  bgcolor="ffffff"
+                  border="0"
+                >
+                  <style>
+                    #details-table td {
+                      padding: 3px;
+                    }
+                  </style>
+                  <tbody>
+                    <tr>
+                      <td><span class="text"></span></td>
+                    </tr>
+                    <tr>
+                      <td
+                        valign="top"
+                        align="left"
+                        width="100"
+                        bgcolor="#b1d0f0"
+                      >
+                        <span class="lightbluetext8 label">Status:</span>
+                      </td>
+                      <td
+                        width="175"
+                        bgcolor="#d5e8fb"
+                        style="word-wrap: break-word"
+                      >
+                        Married
+                      </td>
+                    </tr>
+                    <tr for:row="">
+                      <td
+                        valign="top"
+                        align="left"
+                        width="100"
+                        bgcolor="#b1d0f0"
+                      >
+                        <span class="lightbluetext8 label">Here for:</span>
+                      </td>
+                      <td
+                        width="175"
+                        bgcolor="#d5e8fb"
+                        style="word-wrap: break-word"
+                      >
+                        Friends
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        valign="top"
+                        align="left"
+                        width="100"
+                        bgcolor="#b1d0f0"
+                      >
+                        <span class="lightbluetext8 label">Hometown:</span>
+                      </td>
+                      <td
+                        width="175"
+                        bgcolor="#d5e8fb"
+                        style="word-wrap: break-word"
+                      >
+                        Anaheim
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        valign="top"
+                        align="left"
+                        width="100"
+                        bgcolor="#b1d0f0"
+                      >
+                        <span class="lightbluetext8 label">Ethnicity:</span>
+                      </td>
+                      <td
+                        width="175"
+                        bgcolor="#d5e8fb"
+                        style="word-wrap: break-word"
+                      >
+                        White / Caucasian
+                      </td>
+                    </tr>
+                    <tr sign:row="">
+                      <td
+                        valign="top"
+                        align="left"
+                        width="100"
+                        bgcolor="#b1d0f0"
+                      >
+                        <span class="lightbluetext8 label">Zodiac Sign:</span>
+                      </td>
+                      <td
+                        width="175"
+                        bgcolor="#d5e8fb"
+                        style="word-wrap: break-word"
+                      >
+                        Pisces
+                      </td>
+                    </tr>
+                    <tr drink:row="">
+                      <td
+                        valign="top"
+                        align="left"
+                        width="100"
+                        bgcolor="#b1d0f0"
+                      >
+                        <span class="lightbluetext8 label">Smoke / Drink:</span>
+                      </td>
+                      <td
+                        width="175"
+                        bgcolor="#d5e8fb"
+                        style="word-wrap: break-word"
+                      >
+                        420 Only / Occasionally
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        valign="top"
+                        align="left"
+                        width="100"
+                        bgcolor="#b1d0f0"
+                      >
+                        <span>Education:</span>
+                      </td>
+                      <td
+                        width="175"
+                        bgcolor="#d5e8fb"
+                        style="word-wrap: break-word"
+                      >
+                        Pursuing Bachelor's
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        valign="top"
+                        align="left"
+                        width="100"
+                        bgcolor="#b1d0f0"
+                      >
+                        <span>Occupation:</span>
+                      </td>
+                      <td
+                        width="175"
+                        bgcolor="#d5e8fb"
+                        style="word-wrap: break-word"
+                      >
+                        Web Crafter, Blogger
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </td>
@@ -390,22 +594,22 @@
           <br />
           <b>Pirate's Top Blog Posts</b> [<a
             style="color: var(--dark-blue); font-weight: 600"
-            href=""
+            href="https://blog.absurdpirate.com/blog/?q=top"
             >See Top Posts</a
           >]<br /><br />
           Microblog (<a
             style="color: var(--dark-blue); font-weight: 600"
-            href=""
+            href="https://apmicros.bearblog.dev/"
             >View Here</a
           >)<br /><br />
           Grizzly Gazette (<a
             style="color: var(--dark-blue); font-weight: 600"
-            href=""
+            href="https://grizzlygazette.bearblog.dev/"
             >View Here</a
           >)<br /><br />
           Status Cafe (<a
             style="color: var(--dark-blue); font-weight: 600"
-            href=""
+            href="https://status.cafe/users/absurdpirate"
             >View Here</a
           >)<br /><br />
           Chat.Surgery (<a
@@ -414,7 +618,9 @@
             >View Here</a
           >)<br /><br />
 
-          [<a style="color: var(--dark-blue); font-weight: 600" href=""
+          [<a
+            style="color: var(--dark-blue); font-weight: 600"
+            href="https://blog.absurdpirate.com/blog/"
             >View All Blog Posts</a
           >]
         </p>
@@ -523,7 +729,7 @@
               <td valign="top" align="center" width="1">
                 Ivana
                 <img
-                  src="https://files.catbox.moe/axlmf6.gif"
+                  src="https://files.catbox.moe/fi117s.gif"
                   width="105px"
                   alt=""
                 />
