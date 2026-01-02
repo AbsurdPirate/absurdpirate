@@ -50,6 +50,10 @@
         font-size: 8pt;
       }
 
+      .friend-link {
+        color: grey;
+      }
+
       #what td {
         padding: 3px;
       }
@@ -57,6 +61,10 @@
       .lightbluetext8 {
         color: #369;
         font-weight: bold;
+      }
+
+      .label {
+        padding: 5px;
       }
     </style>
     <header
@@ -69,8 +77,10 @@
         padding: 10px;
       "
     >
-      <p><a href="index.html">AbsurdPirate.com | Home</a></p>
-      <p>powered by Neocities</p>
+      <a style="font-size: 8pt" href="index.html">AbsurdPirate.com | Home</a>
+      <a style="font-size: 8pt" href="https://neocities.org" target="_blank"
+        >powered by Neocities</a
+      >
     </header>
     <nav style="background-color: var(--light-blue); padding: 5px 10px">
       <p>
@@ -88,7 +98,7 @@
             height="138"
             alt="pirate-picture"
           />
-          <p
+          <div
             style="
               font-size: 8pt;
               margin-left: 15px;
@@ -96,16 +106,20 @@
               width: 100px;
             "
           >
-            ":-)"<br /><br />
+            "Do what you want cuz a pirate is free!"<br /><br />
             Male<br />
             27 years old Neocities,<br />
             Indieweb<br />
             United States <br /><br /><br /><br />
             Last Login:<br />
             12/12/2007
-          </p>
+          </div>
         </div>
-        <p><strong>Mood:</strong> vibing</p>
+        <a href="https://status.cafe/users/absurdpirate"
+          ><img
+            src="https://status.cafe/users/absurdpirate/badge.png"
+            alt="Status Cafe Profile"
+        /></a>
         <p style="margin-bottom: 10px">
           View My:
           <a
@@ -230,7 +244,7 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span>General</span>
+                        <span class="lightbluetext8">General</span>
                       </td>
                       <td
                         width="175"
@@ -252,7 +266,7 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span>Video Games</span>
+                        <span class="lightbluetext8">Video Games</span>
                       </td>
                       <td
                         width="175"
@@ -276,7 +290,7 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span>Music</span>
+                        <span class="lightbluetext8">Music</span>
                       </td>
                       <td
                         width="175"
@@ -316,7 +330,7 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span>Movies</span>
+                        <span class="lightbluetext8">Movies</span>
                       </td>
                       <td
                         width="175"
@@ -337,7 +351,7 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span>Shows</span>
+                        <span class="lightbluetext8">Shows</span>
                       </td>
                       <td
                         width="175"
@@ -356,7 +370,7 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span>Literature</span>
+                        <span class="lightbluetext8">Literature</span>
                       </td>
                       <td
                         width="175"
@@ -377,7 +391,7 @@
                         bgcolor="#b1d0f0"
                         nowrap=""
                       >
-                        <span>Heroes</span>
+                        <span class="lightbluetext8">Heroes</span>
                       </td>
                       <td
                         width="175"
@@ -447,13 +461,14 @@
                         align="left"
                         width="100"
                         bgcolor="#b1d0f0"
+                        class="label"
                       >
-                        <span class="lightbluetext8 label">Status:</span>
+                        <span class="lightbluetext8">Status:</span>
                       </td>
                       <td
                         width="175"
                         bgcolor="#d5e8fb"
-                        style="word-wrap: break-word"
+                        style="word-wrap: break-word; padding-left: 3px"
                       >
                         Married
                       </td>
@@ -464,13 +479,14 @@
                         align="left"
                         width="100"
                         bgcolor="#b1d0f0"
+                        class="label"
                       >
-                        <span class="lightbluetext8 label">Here for:</span>
+                        <span class="lightbluetext8">Here for:</span>
                       </td>
                       <td
                         width="175"
                         bgcolor="#d5e8fb"
-                        style="word-wrap: break-word"
+                        style="word-wrap: break-word; padding-left: 3px"
                       >
                         Friends
                       </td>
@@ -481,13 +497,14 @@
                         align="left"
                         width="100"
                         bgcolor="#b1d0f0"
+                        class="label"
                       >
-                        <span class="lightbluetext8 label">Hometown:</span>
+                        <span class="lightbluetext8">Hometown:</span>
                       </td>
                       <td
                         width="175"
                         bgcolor="#d5e8fb"
-                        style="word-wrap: break-word"
+                        style="word-wrap: break-word; padding-left: 3px"
                       >
                         Anaheim
                       </td>
@@ -498,13 +515,14 @@
                         align="left"
                         width="100"
                         bgcolor="#b1d0f0"
+                        class="label"
                       >
-                        <span class="lightbluetext8 label">Ethnicity:</span>
+                        <span class="lightbluetext8">Ethnicity:</span>
                       </td>
                       <td
                         width="175"
                         bgcolor="#d5e8fb"
-                        style="word-wrap: break-word"
+                        style="word-wrap: break-word; padding-left: 3px"
                       >
                         White / Caucasian
                       </td>
@@ -515,13 +533,14 @@
                         align="left"
                         width="100"
                         bgcolor="#b1d0f0"
+                        class="label"
                       >
-                        <span class="lightbluetext8 label">Zodiac Sign:</span>
+                        <span class="lightbluetext8">Zodiac Sign:</span>
                       </td>
                       <td
                         width="175"
                         bgcolor="#d5e8fb"
-                        style="word-wrap: break-word"
+                        style="word-wrap: break-word; padding-left: 3px"
                       >
                         Pisces
                       </td>
@@ -532,13 +551,14 @@
                         align="left"
                         width="100"
                         bgcolor="#b1d0f0"
+                        class="label"
                       >
-                        <span class="lightbluetext8 label">Smoke / Drink:</span>
+                        <span class="lightbluetext8">Smoke / Drink:</span>
                       </td>
                       <td
                         width="175"
                         bgcolor="#d5e8fb"
-                        style="word-wrap: break-word"
+                        style="word-wrap: break-word; padding-left: 3px"
                       >
                         420 Only / Occasionally
                       </td>
@@ -549,13 +569,14 @@
                         align="left"
                         width="100"
                         bgcolor="#b1d0f0"
+                        class="label"
                       >
-                        <span>Education:</span>
+                        <span class="lightbluetext8">Education:</span>
                       </td>
                       <td
                         width="175"
                         bgcolor="#d5e8fb"
-                        style="word-wrap: break-word"
+                        style="word-wrap: break-word; padding-left: 3px"
                       >
                         Pursuing Bachelor's
                       </td>
@@ -566,13 +587,14 @@
                         align="left"
                         width="100"
                         bgcolor="#b1d0f0"
+                        class="label"
                       >
-                        <span>Occupation:</span>
+                        <span class="lightbluetext8">Occupation:</span>
                       </td>
                       <td
                         width="175"
                         bgcolor="#d5e8fb"
-                        style="word-wrap: break-word"
+                        style="word-wrap: break-word; padding-left: 3px"
                       >
                         Web Crafter, Blogger
                       </td>
@@ -599,7 +621,7 @@
           >]<br /><br />
           Microblog (<a
             style="color: var(--dark-blue); font-weight: 600"
-            href="https://apmicros.bearblog.dev/"
+            href="https://apmicros.bearblog.dev/updates/"
             >View Here</a
           >)<br /><br />
           Grizzly Gazette (<a
@@ -687,77 +709,171 @@
             <tr style="height: 176px">
               <td valign="top" align="center" width="1">
                 Master Chief
-                <img width="117px" src="src/img/friends/chief.gif" alt="" />
+                <img
+                  width="117px"
+                  src="src/img/friends/chief.gif"
+                  alt="master-chief"
+                />
               </td>
               <td valign="top" align="center" width="1">
                 Doom Slayer
                 <img
                   width="100px"
                   src="src/img/friends/doomslayer.jpg"
-                  alt=""
+                  alt="doom-slayer"
                 />
               </td>
               <td valign="top" align="center" width="1">
-                Kami <img src="src/img/friends/kami.png" width="100px" alt="" />
+                <a
+                  class="friend-link"
+                  href="https://kami.bearblog.dev"
+                  target="_blank"
+                >
+                  Kami
+                  <img
+                    src="src/img/friends/kami.png"
+                    width="100px"
+                    alt="kami"
+                  />
+                </a>
               </td>
               <td valign="top" align="center" width="1">
-                Ava <img src="src/img/friends/ava.gif" width="100px" alt="" />
+                <a
+                  href="https://avas.space"
+                  target="_blank"
+                  class="friend-link"
+                >
+                  Ava
+                  <img src="src/img/friends/ava.gif" width="100px" alt="ava"
+                /></a>
               </td>
             </tr>
             <tr style="height: 176px">
               <td valign="top" align="center" width="1">
-                Suliman
-                <img width="90px" src="src/img/friends/suliman.png" alt="" />
+                <a
+                  href="https://sulimans.space"
+                  target="_blank"
+                  class="friend-link"
+                >
+                  Suliman
+                  <img
+                    width="90px"
+                    src="src/img/friends/suliman.png"
+                    alt="suliman"
+                  />
+                </a>
               </td>
               <td valign="top" align="center" width="1">
                 Godzilla
-                <img src="src/img/friends/goji.jpeg" width="100px" alt="" />
+                <img
+                  src="src/img/friends/goji.jpeg"
+                  width="100px"
+                  alt="godzilla"
+                />
               </td>
               <td valign="top" align="center" width="1">
-                Mono <img src="src/img/friends/mono.png" width="100px" alt="" />
+                <a
+                  href="https://monocyte.blog/"
+                  target="_blank"
+                  class="friend-link"
+                >
+                  Mono
+                  <img
+                    src="src/img/friends/mono.png"
+                    width="100px"
+                    alt="mono"
+                  />
+                </a>
               </td>
               <td valign="top" align="center" width="1">
                 Gummigoo
-                <img width="110px" src="src/img/friends/gummigoo.jpg" alt="" />
+                <img
+                  width="110px"
+                  src="src/img/friends/gummigoo.jpg"
+                  alt="gummigoo"
+                />
               </td>
             </tr>
             <tr style="height: 176px">
               <td valign="top" align="center" width="1">
-                Psycheoma
-                <img src="src/img/friends/psyche.png" width="100px" alt="" />
+                <a
+                  href="https://psycheoma.bearblog.dev/"
+                  class="friend-link"
+                  target="_blank"
+                >
+                  Psycheoma
+                  <img
+                    src="src/img/friends/psyche.png"
+                    width="100px"
+                    alt="psycheoma"
+                  />
+                </a>
               </td>
               <td valign="top" align="center" width="1">
-                Ivana
-                <img
-                  src="https://files.catbox.moe/fi117s.gif"
-                  width="105px"
-                  alt=""
-                />
+                <a
+                  href="https://mxhusband.bearblog.dev/"
+                  target="_blank"
+                  class="friend-link"
+                >
+                  Ivana
+                  <img
+                    src="https://files.catbox.moe/fi117s.gif"
+                    width="105px"
+                    alt="ivan"
+                  />
+                </a>
               </td>
               <td valign="top" align="center" width="1">
-                Xaya <img src="src/img/friends/xaya.jpg" alt="" />
+                <a
+                  href="https://xaya-e.bearblog.dev/"
+                  class="friend-link"
+                  target="_blank"
+                >
+                  Xaya <img src="src/img/friends/xaya.jpg" alt="xaya"
+                /></a>
               </td>
               <td valign="top" align="center" width="1">
                 Caine
-                <img src="src/img/friends/caine.gif" width="100px" alt="" />
+                <img
+                  src="src/img/friends/caine.gif"
+                  width="100px"
+                  alt="caine"
+                />
               </td>
             </tr>
             <tr style="height: 176px">
               <td valign="top" align="center" width="1">
                 The Arbiter
-                <img src="src/img/friends/arby.jpeg" width="100px" alt="" />
+                <img src="src/img/friends/arby.jpeg" width="100px" alt="arby" />
               </td>
               <td valign="top" align="center" width="1">
                 Trollz0r
-                <img width="100px" src="src/img/friends/trollzor.webp" alt="" />
+                <img
+                  width="100px"
+                  src="src/img/friends/trollzor.webp"
+                  alt="trollz0r"
+                />
               </td>
               <td valign="top" align="center" width="1">
                 Big Boss
-                <img src="src/img/friends/bigboss.jpeg" width="100px" alt="" />
+                <img
+                  src="src/img/friends/bigboss.jpeg"
+                  width="100px"
+                  alt="bigboss"
+                />
               </td>
               <td valign="top" align="center" width="1">
-                Green Day
-                <img width="100px" src="src/img/friends/greenday.jpg" alt="" />
+                <a
+                  target="_blank"
+                  href="https://greenday.com"
+                  class="friend-link"
+                >
+                  Green Day
+                  <img
+                    width="100px"
+                    src="src/img/friends/greenday.jpg"
+                    alt="greenday"
+                /></a>
               </td>
             </tr>
           </tbody>

@@ -9,6 +9,7 @@ const messages = [
   "Please don't sue me",
   "Still workin' on it... probably",
   "Check out the Grizzly Gazette!",
+  "New and Tasty!",
 ];
 
 // SONG LIST VARS
