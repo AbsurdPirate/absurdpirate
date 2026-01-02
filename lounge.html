@@ -1,199 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Absurd Pirate's Internet Lounge</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
-    <script src="https://iframe.chat/scripts/main.min.js"></script>
-  </head>
-  <body>
-    <!-- HEADER SECTION -->
-    <header style="text-align: center">
-      <img src="src/img/logo-1.png" alt="logo" />
-      <div id="message-container">
-        <p id="message"></p>
-      </div>
-    </header>
-    <!-- NAVIGATION -->
-    <nav>
-      <a href="about.html"><img src="src/links/about.png" alt="" /> About</a>
-      <a href="https://blog.absurdpirate.com"
-        ><img src="src/links/blog.png" alt="blog-icon" />Blog</a
-      >
-      <a href="#"><img src="src/links/guestbook.png" alt="" />Guestbook</a>
-      <a href="#"><img src="src/links/crafts.png" alt="" />Crafts</a>
-    </nav>
-    <!-- END NAVIGATION -->
-    <!-- MAIN SECTION -->
-    <main>
-      <!-- PANEL LEFT -->
-      <div id="panel-left">
-        <div id="status">
-          <img src="src/img/captain.png" alt="" srcset="" width="150px" />
-          <div id="statuscafe">
-            <strong style="font-size: 12pt">Latest Status</strong>
-            <div id="statuscafe-username"></div>
-            <div id="statuscafe-content"></div>
-          </div>
-          <script
-            src="https://status.cafe/current-status.js?name=absurdpirate"
-            defer
-          ></script>
-        </div>
-        <img src="src/img/teddychan.png" alt="" />
-        <a href="src/docs/yourewelcomecomrad.pdf" download>
-          <picture>
-            <source
-              srcset="src/img/marxad-still.jpg"
-              media="(prefers-reduced-motion: reduce)"
-            />
-            <img src="src/gifs/marx-ad.gif" alt="marx-ad" width="300px" />
-          </picture>
-        </a>
-      </div>
-      <!-- END PANEL LEFT -->
-      <!-- CENTER-->
-      <div id="center">
-        <!--ROW 1-->
-        <section id="row-1">
-          <div id="greeting">
-            <h1>Ahoy There!</h1>
-            <div style="display: flex; align-items: center">
-              <p style="font-size: 10pt; height: 200px; text-wrap: wrap">
-                My name is Absurd Pirate, or just Pirate if you'd like. Welcome
-                to my corner of the indie-web. This site is functionally and
-                extension of myself, a love letter to tech/web of my younger
-                years, as well as a lounge area for anyone who finds themselves
-                stopping by. <br /><br />
-                Enjoy your stay, click around! This site is probably always
-                going to be under development, so keep an eye out for new
-                updates! Lorem, ipsum dolor sit amet consectetur adipisicing
-                <img
-                  style="
-                    float: right;
-                    margin: 3px;
-                    shape-outside: margin-box;
-                    shape-margin: 3em;
-                  "
-                  height="150px"
-                  src="src/gifs/greeting.gif"
-                  alt=""
-                />
-                elit. Obcaecati maxime, pariatur laboriosam vel aut consequatur
-                odit amet unde veritatis eos et neque quaerat asperiores ipsum
-                reprehenderit magni quidem? Asperiores, quas!<br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- END ROW 1 -->
-        <!--ROW 2-->
-        <section id="row-2">
-          <div class="marquee">
-            <img src="src/stamps/stamp_doom.gif" alt="stamp-doom" />
-            <img src="src/stamps/stamp_gameboy.gif" alt="stamp-gameboy" />
-            <img src="src/stamps/stamp_halo3.gif" alt="stamp-halo3" />
-            <img src="src/stamps/stamp_music_love.gif" alt="stamp-music" />
-            <img src="src/stamps/stamp_palestine.png" alt="stamp-palestine" />
-            <img src="src/stamps/stamp_pride.png" alt="stamp-pride" />
-            <img src="src/stamps/stamp_record.gif" alt="stamp-record" />
-            <img src="src/stamps/stamp_too_funny.jpg" alt="stamp-funny" />
-            <img src="src/stamps/stamp_use_paper.gif" alt="stamp-paper" />
-            <img
-              src="src/stamps/stamp_viddy_games.png"
-              alt="stamp-videogames"
-            />
-            <img src="src/stamps/stamp_windows.gif" alt="stamp-windows" />
-            <img src="src/stamps/stamp_xbox.png" alt="stamp-xbox" />
-          </div>
-          <div class="marquee">
-            <img src="src/stamps/stamp_doom.gif" alt="stamp-doom" />
-            <img src="src/stamps/stamp_gameboy.gif" alt="stamp-gameboy" />
-            <img src="src/stamps/stamp_halo3.gif" alt="stamp-halo3" />
-            <img src="src/stamps/stamp_music_love.gif" alt="stamp-music" />
-            <img src="src/stamps/stamp_palestine.png" alt="stamp-palestine" />
-            <img src="src/stamps/stamp_pride.png" alt="stamp-pride" />
-            <img src="src/stamps/stamp_record.gif" alt="stamp-record" />
-            <img src="src/stamps/stamp_too_funny.jpg" alt="stamp-funny" />
-            <img src="src/stamps/stamp_use_paper.gif" alt="stamp-paper" />
-            <img
-              src="src/stamps/stamp_viddy_games.png"
-              alt="stamp-videogames"
-            />
-            <img src="src/stamps/stamp_windows.gif" alt="stamp-windows" />
-            <img src="src/stamps/stamp_xbox.png" alt="stamp-xbox" />
-          </div>
-        </section>
-        <!-- END ROW 2 -->
-        <!--ROW 3-->
-        <section id="row-3">
-          <div class="win-panel">
-            <h3>Chat with other visitors!</h3>
-            <div class="content" style="height: 250px">
-              <iframe
-                src="https://iframe.chat/embed?chat=88527056"
-                id="chattable"
-                frameborder="none"
-              ></iframe>
-              <script>
-                chattable.initialize({
-                  theme: "Windows XP",
-                });
-              </script>
-            </div>
-          </div>
-        </section>
-        <!-- END ROW 3 -->
-        <!--ROW 4-->
-        <section id="row-4">
-          <div>
-            <div>
-              <webring-css
-                site="https://absurdpirate.com/"
-                custom-style="
-                 .webring { border: 15px ridge var(--primary-purple); background: #fff; height:222px; font-size: 9pt;}
-                 .webring a { color: var(--primary-green); }
-                 .icon { font-size: 80px; color: orange; }
-               "
-              >
-              </webring-css>
-              <script src="https://atignister.github.io/webring_simplechats.js"></script>
-            </div>
-          </div>
-
-          <div>
-            <div id="guestbook">Sign my Guestbook... Or else</div>
-            <div></div>
-          </div>
-        </section>
-        <!-- END ROW 4 -->
-      </div>
-      <div id="panel-right">
-        <img src="src/img/Halo 3.jpg" alt="" srcset="" />
-        <div class="win-panel">
-          <h3>Jukebox (coming soon...)</h3>
-          <div class="content" id="jukebox">
-            <img src="src/img/ipod.png" alt="" srcset="" />
-            <div id="control-center">
-              <audio controls>
-                <source src="horse.ogg" type="audio/ogg" />
-                <source src="horse.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-              <div id="selection"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!--END MAIN SECTION-->
-    <!--FOOTER SECTION-->
-    <footer class="bumpered">
-      <img src="src/img/crafted-by-human.png" alt="" srcset="" /><br />&copy;
-      Absurd Pirate now and forever
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Absurd Pirate's Internet Lounge</title>
+		<link rel="stylesheet" href="css/style2.css" />
+		<script src="js/main.js" defer></script>
+		<script src="https://iframe.chat/scripts/main.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<section id="left">
+				<div id="section-logo">
+					<h1 id="logo">Absurd Pirate's<br />Internet Lounge</h1>
+				</div>
+				<div id="message-container">
+					<p id="message"></p>
+				</div>
+			</section>
+			<section id="right">
+				<h2>Ahoy There!</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Harum consequatur aut rerum quaerat facilis nostrum ratione
+					ipsam, velit, obcaecati quam nihil temporibus?
+					Necessitatibus dolores mollitia at. Perspiciatis accusamus
+					optio maiores.
+				</p>
+			</section>
+		</header>
+		<!-- MAIN-->
+		<main>
+			<!-- NAV -->
+			<nav>
+				<div>
+					<h3>Personal</h3>
+					<ul>
+						<li class="nav-link"><a href="about.html">About</a></li>
+						<li class="nav-link">
+							<a href="about.html">Show & Tell</a>
+						</li>
+					</ul>
+					<h3>Blogs</h3>
+					<ul>
+						<li class="nav-link">Main Blog</li>
+						<li class="nav-link">Micro Blog</li>
+					</ul>
+					<h3>Shrines</h3>
+					<ul>
+						<li class="nav-link">Classic Halo</li>
+						<li class="nav-link">DOOM</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- END NAV -->
+			<!-- CONTENT -->
+			<section id="content">
+				<div id="spacer">
+					<div id="spacer-block"></div>
+				</div>
+				<div id="chat-panel" class="win-panel item">
+					<h3>Chat with other visitors!</h3>
+					<div class="content" style="height: 250px">
+						<iframe
+							src="https://iframe.chat/embed?chat=88527056"
+							id="chattable"
+							frameborder="none"
+						></iframe>
+						<script>
+							chattable.initialize({
+								theme: "Windows XP",
+							});
+						</script>
+					</div>
+				</div>
+			</section>
+			<!-- END CONTENT -->
+		</main>
+		<!-- END MAIN -->
+		<!-- STAMP MARQUEE-->
+		<section id="bottom-marquee">
+			<div class="marquee">
+				<img src="src/stamps/stamp_doom.gif" alt="stamp-doom" />
+				<img src="src/stamps/stamp_gameboy.gif" alt="stamp-gameboy" />
+				<img src="src/stamps/stamp_halo3.gif" alt="stamp-halo3" />
+				<img src="src/stamps/stamp_music_love.gif" alt="stamp-music" />
+				<img
+					src="src/stamps/stamp_palestine.png"
+					alt="stamp-palestine"
+				/>
+				<img src="src/stamps/stamp_pride.png" alt="stamp-pride" />
+				<img src="src/stamps/stamp_record.gif" alt="stamp-record" />
+				<img src="src/stamps/stamp_too_funny.jpg" alt="stamp-funny" />
+				<img src="src/stamps/stamp_use_paper.gif" alt="stamp-paper" />
+				<img
+					src="src/stamps/stamp_viddy_games.png"
+					alt="stamp-videogames"
+				/>
+				<img src="src/stamps/stamp_windows.gif" alt="stamp-windows" />
+				<img src="src/stamps/stamp_xbox.png" alt="stamp-xbox" />
+			</div>
+			<div class="marquee">
+				<img src="src/stamps/stamp_doom.gif" alt="stamp-doom" />
+				<img src="src/stamps/stamp_gameboy.gif" alt="stamp-gameboy" />
+				<img src="src/stamps/stamp_halo3.gif" alt="stamp-halo3" />
+				<img src="src/stamps/stamp_music_love.gif" alt="stamp-music" />
+				<img
+					src="src/stamps/stamp_palestine.png"
+					alt="stamp-palestine"
+				/>
+				<img src="src/stamps/stamp_pride.png" alt="stamp-pride" />
+				<img src="src/stamps/stamp_record.gif" alt="stamp-record" />
+				<img src="src/stamps/stamp_too_funny.jpg" alt="stamp-funny" />
+				<img src="src/stamps/stamp_use_paper.gif" alt="stamp-paper" />
+				<img
+					src="src/stamps/stamp_viddy_games.png"
+					alt="stamp-videogames"
+				/>
+				<img src="src/stamps/stamp_windows.gif" alt="stamp-windows" />
+				<img src="src/stamps/stamp_xbox.png" alt="stamp-xbox" />
+			</div>
+		</section>
+		<!-- END STAMP MARQUEE-->
+		<!--FOOTER SECTION-->
+		<footer class="bumpered">
+			<img
+				src="src/img/crafted-by-human.png"
+				alt=""
+				srcset=""
+			/><br />&copy; Absurd Pirate now and forever
+		</footer>
+		<!-- END FOOTER SECTION-->
+		<!-- FLOATERS -->
+		<!-- JUKEBOX -->
+		<div id="floater-jukebox" class="win-panel floater">
+			<h3>Jukebox (coming soon...)</h3>
+			<div class="content" id="jukebox">
+				<img src="src/img/ipod.png" alt="" height="150px" />
+				<div id="control-center">
+					<audio controls>
+						<source src="horse.ogg" type="audio/ogg" />
+						<source src="horse.mp3" type="audio/mpeg" />
+						Your browser does not support the audio element.
+					</audio>
+					<div id="selection"></div>
+				</div>
+			</div>
+		</div>
+		<!-- END JUKEBOX -->
+		<!-- END FLOATERS-->
+	</body>
 </html>

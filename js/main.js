@@ -24,6 +24,8 @@ const songs = [
 //Titletron vars
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
+const logo = document.getElementById("logo");
+
 // Message of the day
 function generateMessage() {
 	message_of_the_day.innerHTML =
@@ -72,4 +74,8 @@ function loadSite() {
 
 loadSite();
 
-//document.addEventListener("DOMContentLoaded", loadSite, false);
+logo.addEventListener("mouseover", async () => {
+	logo.classList.add("animated-spin");
+	await delay(1000);
+	logo.classList.remove("animated-spin");
+});

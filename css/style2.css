@@ -31,9 +31,12 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 1920px;
 	height: 100vh;
 	min-height: 920px;
 	background-color: rgb(128, 121, 131);
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 header,
@@ -65,8 +68,16 @@ header {
 	color: #ad6bf9;
 	text-shadow: 2px 2px black;
 	top: 10px;
-	left: -190px;
+	left: -80px;
 	rotate: -10deg;
+	width: 340px;
+}
+
+.animated-spin {
+	animation-name: spin;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-direction: forward;
 }
 
 #left {
@@ -157,6 +168,10 @@ nav h3 {
 	color: white;
 }
 
+.nav-link:hover {
+	transform: scale(1.1);
+}
+
 /*
 * CONTENT
 */
@@ -177,6 +192,7 @@ nav h3 {
 
 .item {
 	width: fit-content;
+	margin: 5px;
 }
 
 /*
@@ -190,8 +206,8 @@ nav h3 {
 	overflow-x: hidden;
 	padding: 5px 0;
 	background-color: black;
-	border-top: 3px solid var(--green-dark);
-	border-bottom: 3px solid var(--green-dark);
+	border-top: 3px solid var(--primary-purple);
+	border-bottom: 3px solid var(--primary-purple);
 	border-left: 3px solid orange;
 	border-right: 3px solid lightskyblue;
 }
@@ -230,8 +246,8 @@ footer {
 }
 
 #floater-jukebox {
-	top: 50px;
-	left: 1625px;
+	top: 10%;
+	left: 83%;
 }
 
 .win-panel {
@@ -277,6 +293,26 @@ footer {
 	max-width: 250px;
 }
 
+#control-center {
+	padding: 10px;
+}
+
+#selection {
+	max-height: 150px;
+	overflow-y: scroll;
+	border: 2px solid var(--primary-green);
+}
+
+.song-item {
+	background-color: #338955;
+	padding: 10px;
+	color: white;
+}
+
+.song-item:not(:last-child) {
+	border-bottom: 2px solid var(--primary-green);
+}
+
 /*
 * KEYFRAMES
 */
@@ -296,5 +332,14 @@ footer {
 	}
 	to {
 		transform: scale(1.1);
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(-10deg);
+	}
+	to {
+		transform: rotate(-360deg);
 	}
 }
