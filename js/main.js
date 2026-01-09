@@ -65,10 +65,11 @@ const titletron = async () => {
   }
 };
 
+/*
 songs.forEach((song) => {
   selection.innerHTML += `<div class="song-item">${song[0]}<br>${song[1]} - ${song[2]}</div>`;
 });
-
+*/
 function loadSite() {
   titletron();
   generateMessage();

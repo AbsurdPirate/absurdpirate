@@ -27,7 +27,20 @@
         </div>
         <!-- END SPACER -->
       </section>
-      <section id="right"></section>
+      <section id="right">
+        <h2 style="font-family: rocketship; color: var(--primary-green)">
+          Ahoy There!
+        </h2>
+        <p style="text-wrap: wrap">
+          My name is Absurd Pirate, or just Pirate if you'd like. Welcome to my
+          corner of the indie-web. This site is functionally and extension of
+          myself, a love letter to tech/web of my younger years, as well as a
+          lounge area for anyone who finds themselves stopping by. <br /><br />
+          Enjoy your stay, click around! This site is probably always going to
+          be under development, so keep an eye out for new updates! Lorem, ipsum
+          dolor sit amet consectetur adipisicing
+        </p>
+      </section>
     </header>
     <main>
       <nav>
@@ -39,14 +52,17 @@
           <li class="nav-link">
             <a href="about.html">Show & Tell</a>
           </li>
+          <li class="nav-link">
+            <a href="about.html">Mood Board</a>
+          </li>
         </ul>
         <h3>Blogs</h3>
         <ul>
           <li class="nav-link">
-            <a href="about.html">Main Blog</a>
+            <a href="https://blog.absurdpirate.com">Main Blog</a>
           </li>
           <li class="nav-link">
-            <a href="about.html">Micro Blog</a>
+            <a href="https://apmicros.bearblog.dev">Micro Blog</a>
           </li>
         </ul>
         <h3>Shrines</h3>
@@ -56,6 +72,15 @@
           </li>
           <li class="nav-link">
             <a href="about.html">DOOM</a>
+          </li>
+          <li class="nav-link">
+            <a href="about.html">Danbo</a>
+          </li>
+          <li class="nav-link">
+            <a href="about.html">Gummigoo</a>
+          </li>
+          <li class="nav-link">
+            <a href="about.html">Godzilla</a>
           </li>
         </ul>
       </nav>
@@ -69,41 +94,145 @@
             grid-column: 1 / span 2;
           "
         >
-          CHATBOX
+          <iframe
+            src="https://www3.cbox.ws/box/?boxid=3551336&boxtag=MvNioA"
+            width="100%"
+            height="100%"
+            allowtransparency="yes"
+            allow="autoplay"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            scrolling="auto"
+          ></iframe>
         </div>
         <!--END CHATBOX-->
+        <!--GUESTBOOK-->
         <div
           class="item"
           style="
             background-color: var(--primary-green);
             grid-row: 1;
-            grid-column: 3;
+            grid-column: 3 / span 2;
           "
         >
-          Some shit
+          <img
+            src="src/img/guestbook.png"
+            alt=""
+            srcset=""
+            style="
+              border: 0.5vw ridge var(--primary-purple);
+              box-sizing: border-box;
+              height: 10vw;
+            "
+          />
         </div>
+        <!--END GUESTBOOK-->
+        <!--MARX AD-->
+        <div
+          class="item"
+          id="marx-ad"
+          style="grid-row: 2 / span 2; grid-column: 3"
+        >
+          <img
+            src="src/badges/badge_minecraft.gif"
+            style="width: 100%"
+            alt=""
+          />
+          <img
+            src="src/gifs/marx-ad.gif"
+            alt=""
+            srcset=""
+            style="width: 100%"
+          />
+          <img
+            src="src/badges/badge_fuckingwebmaster.gif"
+            style="width: 100%"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <!--END MARX AD-->
+        <!--PIRATE TV-->
+        <div
+          class="item"
+          style="
+            background-color: var(--primary-green);
+            grid-row: 2 / span 2;
+            grid-column: 4 / span 3;
+          "
+        >
+          Pirate TV
+        </div>
+        <!--END PIRATE TV-->
+        <!-- TERRA ABSURDA -->
+        <div
+          class="item"
+          style="
+            background-color: black;
+            padding: 0.1vw;
+            grid-row: 1;
+            grid-column: 8;
+          "
+        >
+          <img id="terrabsurda" src="src/img/terrabsurda.png" alt="" />
+        </div>
+        <!-- END TERRA ABSURDA -->
+        <!-- TERRA ABSURDA -->
+        <div
+          class="item"
+          style="
+            background-color: var(--primary-green);
+            grid-row: 4;
+            grid-column: 1 / span 2;
+          "
+        >
+          Pirate Button
+        </div>
+        <!-- END TERRA ABSURDA -->
+
+        <!-- CONTACTS-->
         <div
           class="item"
           style="
             background-color: var(--primary-green);
             grid-row: 3;
-            grid-column: 3;
+            grid-column: 1 / span 2;
           "
         >
-          Some Other shit
+          Contacts
         </div>
+        <!-- END CONTACTS -->
         <!--JUKEBOX-->
         <div
           class="item"
           style="
             background-color: var(--primary-green);
-            grid-row: 3 / span 2;
-            grid-column: 4;
+            grid-row: 2 / span 3;
+            grid-column: 7 / span 2;
           "
         >
           Jukebox
         </div>
         <!--END JUKEBOX-->
+        <!-- FAVORITE SITES-->
+        <div class="item" style="grid-row: 4; grid-column: 3 / span 4">
+          <a href="https://darkosparko.nekoweb.org" target="_blank"
+            ><img
+              src="https://darkosparko.nekoweb.org/rocket-button.gif"
+              alt="Rocket into the Spark-Web!"
+          /></a>
+          <a href="https://odditycommoddity.neocities.org/" target="_blank"
+            ><img src="src/sites/odditycommoddity.gif"
+          /></a>
+          <a target="_blank" href="https://melonking.net"
+            ><img
+              alt="Visit Melonking.Net!"
+              src="https://melonking.net/images/badges/MELON-BADGE-2.GIF"
+              style="image-rendering: pixelated"
+          /></a>
+        </div>
+        <!-- END FAVORITE SITES-->
       </section>
     </main>
     <section id="marquee">
@@ -120,27 +249,21 @@
         <img src="src/stamps/stamp_viddy_games.png" alt="stamp-videogames" />
         <img src="src/stamps/stamp_windows.gif" alt="stamp-windows" />
         <img src="src/stamps/stamp_xbox.png" alt="stamp-xbox" />
-      </div>
-      <div class="stamp-container">
-        <img src="src/stamps/stamp_doom.gif" alt="stamp-doom" />
-        <img src="src/stamps/stamp_gameboy.gif" alt="stamp-gameboy" />
-        <img src="src/stamps/stamp_halo3.gif" alt="stamp-halo3" />
-        <img src="src/stamps/stamp_music_love.gif" alt="stamp-music" />
-        <img src="src/stamps/stamp_palestine.png" alt="stamp-palestine" />
-        <img src="src/stamps/stamp_pride.png" alt="stamp-pride" />
-        <img src="src/stamps/stamp_record.gif" alt="stamp-record" />
-        <img src="src/stamps/stamp_too_funny.jpg" alt="stamp-funny" />
-        <img src="src/stamps/stamp_use_paper.gif" alt="stamp-paper" />
-        <img src="src/stamps/stamp_viddy_games.png" alt="stamp-videogames" />
-        <img src="src/stamps/stamp_windows.gif" alt="stamp-windows" />
-        <img src="src/stamps/stamp_xbox.png" alt="stamp-xbox" />
+        <img src="src/stamps/stamp_ds.gif" alt="stamp-ds" />
+        <img src="src/stamps/stamp_xb360.gif" alt="stamp-xb360" />
       </div>
     </section>
 
     <!--FOOTER SECTION-->
     <footer>
-      <img src="src/img/crafted-by-human.png" alt="" srcset="" /><br />
+      <img
+        src="src/img/crafted-by-human.png"
+        alt=""
+        srcset=""
+        style="height: 3vw"
+      />
       <p>&copy; Absurd Pirate now and forever</p>
+      <img src="src/badges/badge_neocities.gif" alt="" />
     </footer>
     <!-- END FOOTER SECTION-->
   </body>

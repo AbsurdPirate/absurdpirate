@@ -218,7 +218,6 @@ section {
 .marquee {
   display: flex;
   align-items: center;
-  animation: loop 10s infinite linear;
 }
 
 .marquee img {
