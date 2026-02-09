@@ -33,16 +33,18 @@
         </h2>
         <p style="text-wrap: wrap">
           My name is Absurd Pirate, or just Pirate if you'd like. Welcome to my
-          corner of the indie-web. This site is functionally and extension of
-          myself, a love letter to tech/web of my younger years, as well as a
-          lounge area for anyone who finds themselves stopping by. <br /><br />
-          Enjoy your stay, click around! This site is probably always going to
-          be under development, so keep an eye out for new updates! Lorem, ipsum
-          dolor sit amet consectetur adipisicing
+          corner of the indie-web. This site is functionally an extension of
+          myself, a love letter <br />to tech/web of my younger years, as well
+          as a lounge area for anyone<br />
+          who finds themselves stopping by. Click around,you never know<br />
+          where it'll take you! <br /><br />
+          Enjoy your stay, click around!
         </p>
+        <img id="smoking-pirate" src="src/gifs/piratelounge.gif" alt="" />
       </section>
     </header>
     <main>
+      <!-- NAVIGATION -->
       <nav>
         <h3>Personal</h3>
         <ul>
@@ -84,6 +86,8 @@
           </li>
         </ul>
       </nav>
+      <!-- END NAVIGATION -->
+      <!-- CONTENT -->
       <section id="content">
         <!--CHATBOX-->
         <div
@@ -162,9 +166,16 @@
             grid-column: 4 / span 3;
           "
         >
-          Pirate TV
+          Pirate TV (coming soon...)
         </div>
         <!--END PIRATE TV-->
+        <!-- TODO -->
+        <img
+          src="src/img/todo_button.png"
+          alt=""
+          style="grid-row: 1; grid-column: 5; width: 10vw"
+        />
+        <!-- END TODO-->
         <!-- TERRA ABSURDA -->
         <div
           class="item"
@@ -178,7 +189,7 @@
           <img id="terrabsurda" src="src/img/terrabsurda.png" alt="" />
         </div>
         <!-- END TERRA ABSURDA -->
-        <!-- TERRA ABSURDA -->
+        <!-- ADD ME BUTTON -->
         <div
           class="item"
           style="
@@ -187,9 +198,31 @@
             grid-column: 1 / span 2;
           "
         >
-          Pirate Button
+          <p>Add me to your site!</p>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              height: 100%;
+            "
+          >
+            <img
+              src="src/sites/absurdpirate-button.png"
+              alt=""
+              srcset=""
+              style="height: 2vw"
+            />
+            <textarea style="resize: none; height: 3.5vw">
+              <a href="https://absurdpirate.com" target="_blank">
+                <img
+                  src="https://absurdpirate.com/src/sites/absurdpirate-button.png"
+                  alt="Set sail with the Indieweb Pirate King"/>
+                </a>
+            </textarea>
+          </div>
         </div>
-        <!-- END TERRA ABSURDA -->
+        <!-- END ADD ME BUTTON -->
 
         <!-- CONTACTS-->
         <div
@@ -212,28 +245,50 @@
             grid-column: 7 / span 2;
           "
         >
-          Jukebox
+          Jukebox (coming soon...)
         </div>
         <!--END JUKEBOX-->
         <!-- FAVORITE SITES-->
-        <div class="item" style="grid-row: 4; grid-column: 3 / span 4">
-          <a href="https://darkosparko.nekoweb.org" target="_blank"
-            ><img
-              src="https://darkosparko.nekoweb.org/rocket-button.gif"
-              alt="Rocket into the Spark-Web!"
-          /></a>
-          <a href="https://odditycommoddity.neocities.org/" target="_blank"
-            ><img src="src/sites/odditycommoddity.gif"
-          /></a>
-          <a target="_blank" href="https://melonking.net"
-            ><img
-              alt="Visit Melonking.Net!"
-              src="https://melonking.net/images/badges/MELON-BADGE-2.GIF"
-              style="image-rendering: pixelated"
-          /></a>
+        <div
+          id="favs"
+          class="item"
+          style="grid-row: 4; grid-column: 3 / span 3"
+        >
+          <p
+            style="
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+              align-items: center;
+              font-weight: bolder;
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+            "
+          >
+            <span>F</span><span>A</span><span>V</span><span>E</span
+            ><span>S</span>
+          </p>
+          <div id="favs-buttons">
+            <a href="https://darkosparko.nekoweb.org" target="_blank"
+              ><img
+                src="https://darkosparko.nekoweb.org/rocket-button.gif"
+                alt="Rocket into the Spark-Web!"
+            /></a>
+            <a href="https://odditycommoddity.neocities.org/" target="_blank"
+              ><img src="src/sites/odditycommoddity.gif"
+            /></a>
+            <a target="_blank" href="https://melonking.net"
+              ><img
+                alt="Visit Melonking.Net!"
+                src="https://melonking.net/images/badges/MELON-BADGE-2.GIF"
+                style="image-rendering: pixelated"
+            /></a>
+          </div>
         </div>
         <!-- END FAVORITE SITES-->
       </section>
+      <!-- END CONTENT -->
     </main>
     <section id="marquee">
       <div class="stamp-container">
